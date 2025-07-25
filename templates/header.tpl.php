@@ -21,28 +21,28 @@
  */
 ?>
 
-<?php if ($logo || $ax_logo): ?>
+<?php if (!empty($logo) || !empty($ax_logo)): ?>
   <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
-    <?php if ($ax_logo): print $ax_logo; else: ?> 
+    <?php if (!empty($ax_logo)): print $ax_logo; else: ?> 
       <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
     <?php endif;?>
   </a>
 <?php endif;?>
 
-<?php if ($site_name || $site_slogan): ?>
+<?php if (!empty($site_name) || !empty($site_slogan)): ?>
   <div class="name-and-slogan">
-    <?php if ($site_name): ?>
+    <?php if (!empty($site_name)): ?>
       <h1 class="site-name">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
       </h1>
     <?php endif; ?>
-    <?php if ($site_slogan): ?>
+    <?php if (!empty($site_slogan)): ?>
       <div class="site-slogan"><?php print $site_slogan; ?></div>
     <?php endif; ?>
   </div>
 <?php endif; ?>
 
-<?php if ($menu): ?>
+<?php if (!empty($menu)): ?>
   <nav class="header-menu">
     <?php print $menu; ?>
 <?php endif; ?>
