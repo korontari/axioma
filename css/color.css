@@ -230,8 +230,13 @@ fieldset {
   color: var(--alert-color);
 }
 
-.block-hero,
-.block-hero h2 {
+.block-hero *,
+.block-hero a,
+.block-hero a:link,
+.block-hero a:visited,
+.block-hero a:hover,
+.block-hero a:focus,
+.block-hero a:active {
   color: var(--hero-color);
 }
 
