@@ -17,3 +17,5 @@ stylesheets[all][] = css/components/menu-dropdown.theme.css
 stylesheets[all][] = css/components/menu-toggle.theme.css
 stylesheets[all][] = css/components/menu-top-only.css
 stylesheets[all][] = css/components/menu-tree.css
+stylesheets[all][] = css/components/language-switcher.css
+
