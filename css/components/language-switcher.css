@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Styling for the core Language Switcher block
+ * and the Language Switcher Dropdown module.
+ */
+
+/**
+ * Core Language Switcher block.
+ */
+.block-locale-language ul.language-switcher-locale-url {
+  list-style-type:none;
+  text-transform: uppercase;
+  padding-left: 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+.block-locale-language ul.language-switcher-locale-url li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.block-locale-language ul.language-switcher-locale-url li:last-child {
+  margin-right: 0;
+}
+.block-locale-language ul.language-switcher-locale-url a {
+  text-decoration: none;
+}
+/* Emphasise currently selected language */
+.block-locale-language ul.language-switcher-locale-url a.active {
+  color: var(--accent-color);
+}
+
+/**
+ * Language Switcher Dropdown module.
+ */
+.block-locale-language .language-switcher-dropdown {
+  display: block;
+  line-height: 3;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url {
+  border: 1px solid;
+  border-color: var(--accent-transparent);
+  background-color: var(--menu-bg-color);
+}
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url li {
+  display: block;
+  margin: 0;
+}
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url li:hover,
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url li:focus,
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url li:active {
+  background-color: var(--accent-transparent);
+}
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url a {
+  padding: 0.75rem 1rem 0.75rem 1rem;
+}
+/* Remove emphasis of currently selected language for the dropdown */
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url a.active {
+  color: var(--base-color);
+}
+/* Restore link hover highlighting */
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url a:hover,
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url a:focus,
+.block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url a:active {
+  color: var(--accent-color);
+}
+
