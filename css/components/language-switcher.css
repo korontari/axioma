@@ -42,6 +42,7 @@
   border: 1px solid;
   border-color: var(--accent-transparent);
   background-color: var(--menu-bg-color);
+  z-index: 999; /* Make the dropdown appear over everything else */
 }
 .block-locale-language .language-switcher-dropdown ul.language-switcher-locale-url li {
   display: block;
