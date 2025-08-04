@@ -13,6 +13,7 @@ Features:
 - Ability to choose between normal and thin font sets.
 - Ability to set menu block alignment for better site layout control.
 - Color module support.
+- Provides styling for the [Language Switcher Dropdown](https://backdropcms.org/project/language_switcher_dropdown) module.
 
 Installation
 ------------
